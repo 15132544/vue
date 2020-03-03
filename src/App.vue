@@ -4,7 +4,6 @@
         <mt-header fixed title="Vue-cms项目"></mt-header>
 <!--        中间的 router-view 区域-->
 
-
 <!--        底部的 Tabbar 区域-->
         <nav class="mui-bar mui-bar-tab">
             <a class="mui-tab-item mui-active" href="#tabbar">
