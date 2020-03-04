@@ -32,3 +32,6 @@ git push
 2.使用 vue-resource 的 this.$http.get 获取数据
 3.获取到的数据，要使用数组的push方法保存到data数据上
 4.使用 v-for 循环 渲染每个item项
+##改造九宫格区域
++ 更改默认九宫格的默认灰色样式
+导入图片 更改图标 图片中 file-loader需要是4.2.0版本 不然路径会显示为 object Module
