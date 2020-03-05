@@ -57,3 +57,12 @@ git push
         .v-enter-active,.v-leave-active{
             transition: all 0.5s ease;
         }
+        
+##改造新闻资讯路由链接
+    新闻资讯更改为router-link标签 跳转到‘/home/newlist’路由下 编写NewsList组件
+    配置连接路由跳转
+##新闻资讯页面制作
+1.绘制界面
++ 使用mui中的media-list组件
+2.使用vue-resource获取数据
+3.渲染真实数据 <假数据>
