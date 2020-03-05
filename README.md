@@ -35,3 +35,25 @@ git push
 ##改造九宫格区域
 + 更改默认九宫格的默认灰色样式
 导入图片 更改图标 图片中 file-loader需要是4.2.0版本 不然路径会显示为 object Module
+###路由重定向
+    默认访问/根路径 重定向至/home路由下{path:"/",redirect:'/home'}
+###组件切换动画效果实现
+    1.首先解决切换tabbar有滚动条
+        给最外层div添加 overflow-x:hidden样式 不能添加y轴 会使下滑滚动隐藏 主要要做的是隐藏左右两侧
+    2.动画部分用transtion标签包裹 添加
+        .v-enter{
+            opacity: 0;
+            transform: translateX(100%);
+            /*实现动画待进入的从右往左进入*/
+        }
+        .v-leave-to{
+            opacity: 0;
+            transform: translateX(-100%);
+            //实现离开动画冲右往左离开
+            position: absolute;
+            //解决进入动画会从下往上进入 
+            
+        }
+        .v-enter-active,.v-leave-active{
+            transition: all 0.5s ease;
+        }

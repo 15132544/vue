@@ -48,7 +48,7 @@ export default {
     },
     methods:{
         gitLunbotu(){//获取轮播图数据
-            this.$http.get("https://uploadbeta.com/api/pictures/random/?key=二次元").then(result =>{
+            this.$http.get("https://uploadbeta.com/api/pictures/random/?key=推女郎").then(result =>{
                 // console.log(result);
                 if(result.status === 200){
                     //获取图片成功 保存图片至数组中
@@ -68,10 +68,10 @@ export default {
 </script>
 <style lang="css">
 .mint-swipe{
-    height: 600px;
+    height: 200px;
 }
 .mint-swipe-item img{
-    height: 600px;
+    height: 200px;
 }
 .mint-swipe-item:nth-child(1){
             background-color: red;

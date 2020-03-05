@@ -3,9 +3,9 @@
 <!--        顶部的 Header 区域-->
         <mt-header fixed title="Vue-cms项目"></mt-header>
 <!--        中间的 router-view 区域-->
-<!--            <transition mode="out-in">-->
+            <transition>
                 <router-view></router-view>
-<!--            </transition>-->
+            </transition>
         <!--        底部的 Tabbar 区域-->
         <nav class="mui-bar mui-bar-tab">
             <router-link class="mui-tab-item" to="/home">
@@ -35,12 +35,18 @@
 <style scoped>
 .app-container{
     padding-top: 40px;
+    overflow-x: hidden;
 }
-.v-enter,.v-leave-to{
+.v-enter{
     opacity: 0;
-    transform: translateX(200px);
+    transform: translateX(100%);
+}
+.v-leave-to{
+    opacity: 0;
+    transform: translateX(-100%);
+    position: absolute;
 }
 .v-enter-active,.v-leave-active{
-    transition: all 0.8s ease;
+    transition: all 0.5s ease;
 }
 </style>
