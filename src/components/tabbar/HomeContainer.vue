@@ -11,9 +11,9 @@
             <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><router-link to="/home/newslist">
                 <img src="../../images/menu1.png" alt="">
                 <div class="mui-media-body">新闻资讯</div></router-link></li>
-            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><router-link to="/home/photolist">
                 <img src="../../images/menu2.png" alt="">
-                <div class="mui-media-body">图片分享</div></a></li>
+                <div class="mui-media-body">图片分享</div></router-link></li>
             <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
                 <img src="../../images/menu3.png" alt="">
                 <div class="mui-media-body">商品购买</div></a></li>
@@ -26,12 +26,6 @@
             <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
                 <img src="../../images/menu6.png" alt="">
                 <div class="mui-media-body">联系我们</div></a></li>
-            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
-                <span class="mui-icon mui-icon-phone"></span>
-                <div class="mui-media-body">Phone</div></a></li>
-            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
-                <span class="mui-icon mui-icon-phone"></span>
-                <div class="mui-media-body">Phone</div></a></li>
         </ul>
     </div>
 </template>
@@ -66,7 +60,7 @@ export default {
     }
 }
 </script>
-<style lang="css">
+<style lang="css" scoped>
 .mint-swipe{
     height: 200px;
 }

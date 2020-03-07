@@ -8,11 +8,13 @@
   },
   "dependencies": {
     "mint-ui": "^2.2.13",
+    "moment": "^2.24.0",
     "vue": "^2.6.11",
-    "vue-router": "^3.1.6",
-    "vue-resource": "^1.5.1"
+    "vue-resource": "^1.5.1",
+    "vue-router": "^3.1.6"
   },
   "devDependencies": {
+    "babel-plugin-transform-remove-strict-mode": "^0.0.2",
     "css-loader": "^3.4.2",
     "file-loader": "^4.2.0",
     "html-loader": "^0.5.5",
@@ -28,7 +30,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server --open --port 8080 --contentBase src --hot"
+    "dev": "webpack-dev-server --open --port 8888 --contentBase src --hot --host 192.168.0.113"
   },
   "keywords": [],
   "author": "",
